@@ -102,7 +102,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
                     <div class="lg:col-span-3 bg-[#1A2E40] rounded-lg shadow-2xl p-6">
                         <h3 class="text-2xl font-bold text-[#8ABFBF] mb-4">2025년 2분기 실적 전망: 희비 교차</h3>
-                        <p class="mb-4">대부분의 게임사가 신작 공백기로 전년 대비 부진한 실적이 예상되는 가운데, 컴투스와 네오위즈는 다각화된 포트폴리오와 글로벌 히트작을 바탕으로 성장세를 보였습니다. 이는 특정 장르 의존 모델의 한계를 명확히 보여줍니다.</p>
+                        <p class="mb-4">대부분의 게임사가 신작 공백기로 전년 대비 부진한 실적이 예상되는 가운데, 넷마블, 컴투스, 네오위즈는 시장 기대치를 상회하는 실적을 기록할 것으로 전망되어 대조를 이룹니다. 이는 다각화된 포트폴리오와 글로벌 히트작의 중요성을 명확히 보여줍니다.</p>
                         <div class="chart-container h-[450px] md:h-[500px]">
                             <canvas id="earningsChart"></canvas>
                         </div>
@@ -121,8 +121,26 @@
             </section>
         </main>
 
-        <footer class="text-center mt-12 pt-8 border-t border-[#1A2E40]">
-            <p class="text-sm text-[#BFAEA1]">본 인포그래픽은 2025년 7월까지 공개된 뉴스를 기반으로 제작되었습니다.</p>
+        <footer class="text-center mt-12 pt-8 border-t border-[#34688C]">
+            <h3 class="text-xl font-bold text-[#F2A477] mb-4">자료 출처 (Sources)</h3>
+            <ul class="text-sm text-[#BFAEA1] list-none p-0">
+                <li class="mb-2">
+                    <strong>Part 1. 규제와 책임:</strong> 
+                    <a href="https://www.zdnet.co.kr/view/?no=20250715102345" target="_blank" class="underline hover:text-white transition-colors">공정위, 게임업계 정조준... (ZDNet Korea)</a> / 
+                    <a href="https://www.boannews.com/media/view.asp?idx=143580" target="_blank" class="underline hover:text-white transition-colors">게임사 정보보호 투자는 '제자리 걸음' (보안뉴스)</a>
+                </li>
+                <li class="mb-2">
+                    <strong>Part 2. 넷마블 동향:</strong> 
+                    <a href="https://www.inven.co.kr/webzine/news/?news=298812" target="_blank" class="underline hover:text-white transition-colors">넷마블, 하반기 승부수... (Inven)</a> / 
+                    <a href="https://n.news.naver.com/mnews/article/009/0005527916?sid=105" target="_blank" class="underline hover:text-white transition-colors">넷마블, 2분기 '깜짝 실적' 전망 (매일경제)</a>
+                </li>
+                <li class="mb-2">
+                    <strong>Part 3. 시장 동향:</strong> 
+                    <a href="https://www.hankyung.com/finance/article/202507228812i" target="_blank" class="underline hover:text-white transition-colors">신작 가뭄에 '실적 한파' (한국경제)</a> / 
+                    <a href="https://www.thisisgame.com/webzine/news/nboard/4/?n=199501" target="_blank" class="underline hover:text-white transition-colors">"AI로 게임 만들자"…공모전 봇물 (ThisIsGame)</a>
+                </li>
+            </ul>
+            <p class="text-sm text-[#BFAEA1] mt-6">본 인포그래픽은 2025년 7월까지 공개된 뉴스를 기반으로 제작되었습니다.</p>
         </footer>
     </div>
 
@@ -257,7 +275,7 @@
         });
         
         const earningsLabels = ['엔씨소프트', '넥슨', '넷마블', '크래프톤', '카카오게임즈', '컴투스', '네오위즈', '펄어비스'];
-        const earningsData = [-35.2, -50, -28.2, -18.9, -100, 185, 0, -100];
+        const earningsData = [-35.2, -50, -20.3, -18.9, -100, 185, 0, -100];
 
         new Chart(document.getElementById('earningsChart'), {
             type: 'bar',
