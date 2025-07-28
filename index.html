@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 7월 K-게임 산업 동향 인포그래픽</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .kpi-card {
+            background-color: #1A2E40;
+            color: #F2E8DF;
+            border-left: 5px solid #F2A477;
+        }
+        .flow-chart-arrow {
+            content: '▼';
+            font-size: 2rem;
+            color: #F2A477;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="bg-[#0D1821]">
+
+    <div class="container mx-auto p-4 md:p-8 text-[#F2E8DF]">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#F2A477] mb-2">2025년 7월 K-게임 산업 동향</h1>
+            <p class="text-lg md:text-xl text-[#BFAEA1]">규제의 파도, 신작의 공세, 그리고 AI 혁명의 서막</p>
+        </header>
+
+        <main>
+            <section id="regulations" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-8 border-b-4 border-[#F2A477] pb-2">Part 1. 심화되는 규제와 책임: 신뢰도 시험대에 오른 K-게임</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    <div class="bg-[#1A2E40] rounded-lg shadow-2xl p-6">
+                        <h3 class="text-2xl font-bold text-[#F2A477] mb-4">공정위의 전방위 압박</h3>
+                        <p class="mb-4">공정거래위원회가 확률형 아이템의 소비자 기만(B2C)과 앱마켓의 불공정 거래(B2B)를 동시에 조사하며 산업의 수익 구조와 생태계 전반에 대한 규제 강도를 높이고 있습니다. 이는 단발성 조치를 넘어 산업의 투명성을 근본적으로 재편하려는 신호탄입니다.</p>
+                        <div class="chart-container h-80 md:h-96">
+                            <canvas id="ftcActionChart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-[#BFAEA1]">크래프톤과 컴투스는 확률 정보 오류에 대해 각각 250만원의 과태료를 부과받았으나, 이는 향후 더 강력한 제재를 위한 '법적 선례' 확립의 의미가 큽니다. 엔씨소프트-구글 리베이트 의혹 조사는 플랫폼 독점 구조의 핵심을 겨냥하고 있습니다.</p>
+                    </div>
+
+                    <div class="bg-[#1A2E40] rounded-lg shadow-2xl p-6">
+                        <h3 class="text-2xl font-bold text-[#F2A477] mb-4">정보보호 투자의 역설</h3>
+                        <p class="mb-4">주요 게임사들이 사상 최대 매출을 경신하는 동안, 정보보호 투자 비율은 매우 저조한 수준에 머물러 이용자 정보 보호에 대한 책임감이 부족하다는 비판에 직면했습니다. 이는 잠재적인 비즈니스 리스크를 방치하는 것과 같습니다.</p>
+                        <div class="chart-container h-80 md:h-96">
+                            <canvas id="securityInvestmentChart"></canvas>
+                        </div>
+                        <p class="mt-4 text-sm text-[#BFAEA1]">매출 대비 정보보호 투자 비율이 1%를 넘는 곳은 컴투스와 엔씨소프트뿐이며, 넥슨과 크래프톤 등은 0.5% 내외에 그쳐 역대급 실적과 대조를 이룹니다. 이는 향후 기업 가치 평가에 중대한 악재가 될 수 있습니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="netmarble" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-8 border-b-4 border-[#34688C] pb-2">Part 2. 넷마블의 하반기 승부수: 3종의 IP, 3개의 전략</h2>
+                <div class="bg-[#1A2E40] rounded-lg shadow-2xl p-8">
+                    <p class="text-center text-lg mb-8">넷마블은 '신규 IP', '글로벌 IP', '클래식 IP'라는 명확한 삼각편대 전략으로 2025년 하반기 시장 돌파를 시도합니다. 이는 리스크를 분산하고 각기 다른 목표 시장을 정밀 타격하여 성과를 극대화하려는 계산된 행보입니다.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div class="border-2 border-[#34688C] rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                            <h4 class="text-xl font-bold text-[#8ABFBF] mb-2">국내 시장 공략</h4>
+                            <p class="text-2xl font-black text-white mb-2">'뱀피르'</p>
+                            <p class="text-sm">검증된 '리니지2 레볼루션' 개발진과 '뱀파이어' 콘셉트로 국내 MMORPG 시장을 정조준하는 신규 IP. 7월 29일 쇼케이스를 통해 기대감 증폭.</p>
+                        </div>
+                        <div class="border-2 border-[#F2A477] rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                            <h4 class="text-xl font-bold text-[#F2A477] mb-2">글로벌 시장 개척</h4>
+                            <p class="text-2xl font-black text-white mb-2">'일곱 개의 대죄: Origin'</p>
+                            <p class="text-sm">강력한 글로벌 IP 기반의 멀티플랫폼(PC, 콘솔, 모바일) 오픈월드. 게임스컴 2025에서 공개하며 '글로벌 메가 히트'를 목표.</p>
+                        </div>
+                        <div class="border-2 border-[#BFAEA1] rounded-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                            <h4 class="text-xl font-bold text-[#BFAEA1] mb-2">클래식 팬덤 강화</h4>
+                            <p class="text-2xl font-black text-white mb-2">'RF 온라인 넥스트'</p>
+                            <p class="text-sm">'코어 월드' 대규모 업데이트로 기존 팬덤을 다지고 안정적인 수익원을 확보하며 포트폴리오의 균형을 맞추는 역할.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="market-trends" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-8 border-b-4 border-[#8ABFBF] pb-2">Part 3. 전환기의 K-게임: 실적과 미래 동력</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                    <div class="lg:col-span-3 bg-[#1A2E40] rounded-lg shadow-2xl p-6">
+                        <h3 class="text-2xl font-bold text-[#8ABFBF] mb-4">2025년 2분기 실적 전망: 희비 교차</h3>
+                        <p class="mb-4">대부분의 게임사가 신작 공백기로 전년 대비 부진한 실적이 예상되는 가운데, 컴투스와 네오위즈는 다각화된 포트폴리오와 글로벌 히트작을 바탕으로 성장세를 보였습니다. 이는 특정 장르 의존 모델의 한계를 명확히 보여줍니다.</p>
+                        <div class="chart-container h-[450px] md:h-[500px]">
+                            <canvas id="earningsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 space-y-8">
+                        <div class="bg-[#1A2E40] rounded-lg shadow-2xl p-6">
+                            <h3 class="text-2xl font-bold text-[#8ABFBF] mb-4">플랫폼 경계의 붕괴</h3>
+                            <p>글로벌 시장은 더 이상 콘솔 독점작이 의미 없는 '멀티플랫폼' 시대로 전환하고 있습니다. 넷마블의 '7DS: 오리진'과 같은 전략은 이러한 흐름에 부응하는 필연적 선택입니다. 어떤 플랫폼에서든 최고의 경험을 제공하는 것이 새로운 성공 방정식입니다.</p>
+                        </div>
+                        <div class="bg-[#1A2E40] rounded-lg shadow-2xl p-6">
+                            <h3 class="text-2xl font-bold text-[#8ABFBF] mb-4">생성형 AI, 개발의 판도를 바꾸다</h3>
+                            <p>7월에 집중된 AI 게임 공모전들은 업계가 AI 네이티브 인재를 선제적으로 육성하려는 전략적 움직임을 보여줍니다. 이는 개발 비용 절감, 기간 단축, 그리고 새로운 직무의 부상 등 게임 개발 패러다임의 근본적인 변화를 예고합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 pt-8 border-t border-[#1A2E40]">
+            <p class="text-sm text-[#BFAEA1]">본 인포그래픽은 2025년 7월까지 공개된 뉴스를 기반으로 제작되었습니다.</p>
+        </footer>
+    </div>
+
+    <script>
+        const vibrantPalette = {
+            primary: '#F2A477', 
+            secondary: '#34688C',
+            accent1: '#8ABFBF',
+            accent2: '#F2E8DF',
+            background: '#1A2E40',
+            text: '#F2E8DF',
+            negative: '#BF6A7A',
+            positive: '#8ABFBF'
+        };
+
+        function wrapText(label) {
+            const maxLen = 16;
+            if (typeof label !== 'string' || label.length <= maxLen) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxLen && currentLine.length > 0) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
+        
+        const defaultTooltipCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        new Chart(document.getElementById('ftcActionChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['확률 정보 오류 (B2C)', '앱마켓 리베이트 의혹 (B2B)'],
+                datasets: [{
+                    label: '공정위 조사 영역',
+                    data: [50, 50],
+                    backgroundColor: [vibrantPalette.primary, vibrantPalette.secondary],
+                    borderColor: vibrantPalette.background,
+                    borderWidth: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...defaultTooltipCallback.plugins,
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            color: vibrantPalette.text
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: '공정위 조사의 두 축',
+                        color: vibrantPalette.text,
+                        font: { size: 16 }
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('securityInvestmentChart'), {
+            type: 'bar',
+            data: {
+                labels: ['넷마블', '크래프톤', '위메이드', '카카오게임즈', '넥슨', '엔씨소프트', '컴투스'],
+                datasets: [{
+                    label: '매출 대비 정보보호 투자 비율 (%)',
+                    data: [0.21, 0.35, 0.43, 0.48, 0.56, 1.14, 1.24],
+                    backgroundColor: [
+                        vibrantPalette.negative, vibrantPalette.negative, vibrantPalette.negative, vibrantPalette.negative, vibrantPalette.negative,
+                        vibrantPalette.positive, vibrantPalette.positive
+                    ],
+                    borderColor: vibrantPalette.background,
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: { color: 'rgba(242, 232, 223, 0.1)' },
+                        ticks: { 
+                            color: vibrantPalette.text,
+                            callback: function(value) { return value + '%' }
+                        }
+                    },
+                    y: {
+                        grid: { display: false },
+                        ticks: { color: vibrantPalette.text }
+                    }
+                },
+                plugins: {
+                    ...defaultTooltipCallback.plugins,
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: '주요 게임사 정보보호 투자 비율 (2024년 기준)',
+                        color: vibrantPalette.text,
+                        font: { size: 16 }
+                    }
+                }
+            }
+        });
+        
+        const earningsLabels = ['엔씨소프트', '넥슨', '넷마블', '크래프톤', '카카오게임즈', '컴투스', '네오위즈', '펄어비스'];
+        const earningsData = [-35.2, -50, -28.2, -18.9, -100, 185, 0, -100];
+
+        new Chart(document.getElementById('earningsChart'), {
+            type: 'bar',
+            data: {
+                labels: earningsLabels.map(wrapText),
+                datasets: [{
+                    label: '전년 동기 대비 영업이익 증감률 (%)',
+                    data: earningsData,
+                    backgroundColor: earningsData.map(v => v >= 0 ? vibrantPalette.positive : vibrantPalette.negative),
+                    borderColor: vibrantPalette.background,
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: 'rgba(242, 232, 223, 0.1)' },
+                        ticks: { 
+                            color: vibrantPalette.text,
+                            callback: function(value) { return value + '%' }
+                        }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: vibrantPalette.text }
+                    }
+                },
+                plugins: {
+                    ...defaultTooltipCallback.plugins,
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: '주요 게임사 2분기 영업이익 증감률 전망 (YoY)',
+                        color: vibrantPalette.text,
+                        font: { size: 16 }
+                    },
+                    tooltip: {
+                         callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                  return label.join(' ');
+                                } else {
+                                  return label;
+                                }
+                            },
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    if(context.raw === -100) {
+                                        label += '적자 전환/지속';
+                                    } else if (context.raw === 0) {
+                                        label += '유지';
+                                    } else {
+                                        label += context.parsed.y + '%';
+                                    }
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
